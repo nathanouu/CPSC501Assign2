@@ -36,6 +36,9 @@ public class Inspector
 
         System.out.println("\n******* Fields");
         fieldNames(obj, objectClass, recursive);
+
+        System.out.println("\n******* Super Classes");
+        superNames(obj, objectClass, recursive);
 	}
 
     public void interfaceNames(Object obj, Class objectClass, boolean recursive)
@@ -49,8 +52,32 @@ public class Inspector
 
             if (interFace.getConstructors().length != (new Constructor[] {}).length)
             {
-                System.out.println("\n*****  Interface constructors *****");
+                System.out.println("\n*****  Interface constructors ");
                 constructorNames(interFace);
+            }
+
+            if (interFace.getMethods().length != (new Method[] {}).length)
+            {
+                System.out.println("\n*****  Interface methods ");
+                methodNames(interFace);
+            }
+
+            if (interFace.getConstructors().length != (new Constructor[] {}).length)
+            {
+                System.out.println("\n*****  Interface fields ");
+                fieldNames(obj, interFace, recursive);
+            }
+
+            if (interFace.getInterfaces().length != (new Method[] {}).length) 
+            {
+                System.out.println("\n***** Getting Recursive Interfaces");
+            }
+
+            while (interFace.getInterfaces().length != (new Method[] {}).length) 
+            {
+                for (Class recInterface : interFace.getInterfaces()) {
+                    interfaceNames(obj, recInterface, recursive);
+                }
             }
             
             System.out.println("\n****** End of Interface traversal  ******\n");
@@ -126,7 +153,7 @@ public class Inspector
 
             if (recursive) 
             {
-                System.out.println("**** Recursion through fields ****");
+                System.out.println("**** Recursion through fields");
                 Vector<Field> objectsToInspect = new Vector();
 
                 for (Field field : declaredFields) {
@@ -141,6 +168,28 @@ public class Inspector
         }
         catch (Exception e) { System.out.println(e.getMessage()); }
 
+    }
+    public void superNames(Object obj, Class objectClass, boolean recursive)
+    {
+        System.out.println("\n***** Super Classes");
+        methodNames(objectClass.getSuperclass());
+        constructorNames(objectClass.getSuperclass());
+        fieldNames(obj, objectClass, recursive);
+        Class currentSuperClass = objectClass.getSuperclass();
+
+        if (currentSuperClass.getSuperclass() != null)
+            System.out.println("\n****** Getting Recursive Superclasses");
+
+        while (currentSuperClass.getSuperclass() != null) {
+            Class nextSuperClass = currentSuperClass.getSuperclass();
+            System.out.println("\n******" +  nextSuperClass.getName());
+            methodNames(nextSuperClass);
+            constructorNames(nextSuperClass);
+            fieldNames(obj, nextSuperClass, recursive);
+            currentSuperClass = nextSuperClass;
+        }
+
+        System.out.println("\n******   End of super class traversal    *****\n");
     }
 
 }
