@@ -1,0 +1,492 @@
+======================================================
+Filename: script5.txt
+Running Test: ClassD
+Recursive: true
+    Declaring Class: ClassD
+    Super Class: java.lang.Object
+
+
+******* Constructors
+    Constructor: ClassD
+        Modifiers : 1
+
+    Constructor: ClassD
+        Parameter: int
+        Modifiers : 1
+
+
+******* Methods
+    Method: toString
+        Return type : java.lang.String
+        Modifiers : 1
+
+
+    Method: getVal3
+        Return type : int
+        Modifiers : 1
+
+
+
+******* Fields
+        Field: val
+        Type: ClassA
+        Modifier: 2
+        Value: ClassA
+
+        Field: val2
+        Type: ClassA
+        Modifier: 10
+        Value: null
+
+        Field: val3
+        Type: int
+        Modifier: 2
+        Value: 34
+
+        Field: vallarray
+        Type: [LClassA;
+        Modifier: 2
+        Value: [LClassA;@232204a1
+
+**** Recursion through fields
+    Declaring Class: ClassA
+    Super Class: java.lang.Object
+    Interface : java.io.Serializable
+
+****** End of Interface traversal  ******
+
+    Interface : java.lang.Runnable
+
+*****  Interface methods 
+    Method: run
+        Return type : void
+        Modifiers : 1025
+
+
+
+****** End of Interface traversal  ******
+
+
+
+******* Constructors
+    Constructor: ClassA
+        Modifiers : 1
+
+    Constructor: ClassA
+        Parameter: int
+        Modifiers : 1
+
+
+******* Methods
+    Method: run
+        Return type : void
+        Modifiers : 1
+
+
+    Method: toString
+        Return type : java.lang.String
+        Modifiers : 1
+
+
+    Method: setVal
+        Exception : java.lang.Exception
+        Parameter : int
+        Return type : void
+        Modifiers : 1
+
+
+    Method: getVal
+        Return type : int
+        Modifiers : 1
+
+
+    Method: printSomething
+        Return type : void
+        Modifiers : 2
+
+
+
+******* Fields
+        Field: val
+        Type: int
+        Modifier: 2
+        Value: 17
+
+        Field: val2
+        Type: double
+        Modifier: 2
+        Value: 0.2
+
+        Field: val3
+        Type: boolean
+        Modifier: 2
+        Value: true
+
+**** Recursion through fields
+
+******* Super Classes
+
+***** Super Classes
+    Method: finalize
+        Exception : java.lang.Throwable
+        Return type : void
+        Modifiers : 4
+
+
+    Method: wait
+        Exception : java.lang.InterruptedException
+        Parameter : long
+        Parameter : int
+        Return type : void
+        Modifiers : 17
+
+
+    Method: wait
+        Exception : java.lang.InterruptedException
+        Parameter : long
+        Return type : void
+        Modifiers : 273
+
+
+    Method: wait
+        Exception : java.lang.InterruptedException
+        Return type : void
+        Modifiers : 17
+
+
+    Method: equals
+        Parameter : java.lang.Object
+        Return type : boolean
+        Modifiers : 1
+
+
+    Method: toString
+        Return type : java.lang.String
+        Modifiers : 1
+
+
+    Method: hashCode
+        Return type : int
+        Modifiers : 257
+
+
+    Method: getClass
+        Return type : java.lang.Class
+        Modifiers : 273
+
+
+    Method: clone
+        Exception : java.lang.CloneNotSupportedException
+        Return type : java.lang.Object
+        Modifiers : 260
+
+
+    Method: registerNatives
+        Return type : void
+        Modifiers : 266
+
+
+    Method: notify
+        Return type : void
+        Modifiers : 273
+
+
+    Method: notifyAll
+        Return type : void
+        Modifiers : 273
+
+
+    Constructor: java.lang.Object
+        Modifiers : 1
+
+        Field: val
+        Type: int
+        Modifier: 2
+        Value: 17
+
+        Field: val2
+        Type: double
+        Modifier: 2
+        Value: 0.2
+
+        Field: val3
+        Type: boolean
+        Modifier: 2
+        Value: true
+
+**** Recursion through fields
+
+******   End of super class traversal    *****
+
+null
+
+******* Super Classes
+
+***** Super Classes
+    Method: finalize
+        Exception : java.lang.Throwable
+        Return type : void
+        Modifiers : 4
+
+
+    Method: wait
+        Exception : java.lang.InterruptedException
+        Parameter : long
+        Parameter : int
+        Return type : void
+        Modifiers : 17
+
+
+    Method: wait
+        Exception : java.lang.InterruptedException
+        Parameter : long
+        Return type : void
+        Modifiers : 273
+
+
+    Method: wait
+        Exception : java.lang.InterruptedException
+        Return type : void
+        Modifiers : 17
+
+
+    Method: equals
+        Parameter : java.lang.Object
+        Return type : boolean
+        Modifiers : 1
+
+
+    Method: toString
+        Return type : java.lang.String
+        Modifiers : 1
+
+
+    Method: hashCode
+        Return type : int
+        Modifiers : 257
+
+
+    Method: getClass
+        Return type : java.lang.Class
+        Modifiers : 273
+
+
+    Method: clone
+        Exception : java.lang.CloneNotSupportedException
+        Return type : java.lang.Object
+        Modifiers : 260
+
+
+    Method: registerNatives
+        Return type : void
+        Modifiers : 266
+
+
+    Method: notify
+        Return type : void
+        Modifiers : 273
+
+
+    Method: notifyAll
+        Return type : void
+        Modifiers : 273
+
+
+    Constructor: java.lang.Object
+        Modifiers : 1
+
+        Field: val
+        Type: ClassA
+        Modifier: 2
+        Value: ClassA
+
+        Field: val2
+        Type: ClassA
+        Modifier: 10
+        Value: null
+
+        Field: val3
+        Type: int
+        Modifier: 2
+        Value: 34
+
+        Field: vallarray
+        Type: [LClassA;
+        Modifier: 2
+        Value: [LClassA;@232204a1
+
+**** Recursion through fields
+    Declaring Class: ClassA
+    Super Class: java.lang.Object
+    Interface : java.io.Serializable
+
+****** End of Interface traversal  ******
+
+    Interface : java.lang.Runnable
+
+*****  Interface methods 
+    Method: run
+        Return type : void
+        Modifiers : 1025
+
+
+
+****** End of Interface traversal  ******
+
+
+
+******* Constructors
+    Constructor: ClassA
+        Modifiers : 1
+
+    Constructor: ClassA
+        Parameter: int
+        Modifiers : 1
+
+
+******* Methods
+    Method: run
+        Return type : void
+        Modifiers : 1
+
+
+    Method: toString
+        Return type : java.lang.String
+        Modifiers : 1
+
+
+    Method: setVal
+        Exception : java.lang.Exception
+        Parameter : int
+        Return type : void
+        Modifiers : 1
+
+
+    Method: getVal
+        Return type : int
+        Modifiers : 1
+
+
+    Method: printSomething
+        Return type : void
+        Modifiers : 2
+
+
+
+******* Fields
+        Field: val
+        Type: int
+        Modifier: 2
+        Value: 17
+
+        Field: val2
+        Type: double
+        Modifier: 2
+        Value: 0.2
+
+        Field: val3
+        Type: boolean
+        Modifier: 2
+        Value: true
+
+**** Recursion through fields
+
+******* Super Classes
+
+***** Super Classes
+    Method: finalize
+        Exception : java.lang.Throwable
+        Return type : void
+        Modifiers : 4
+
+
+    Method: wait
+        Exception : java.lang.InterruptedException
+        Parameter : long
+        Parameter : int
+        Return type : void
+        Modifiers : 17
+
+
+    Method: wait
+        Exception : java.lang.InterruptedException
+        Parameter : long
+        Return type : void
+        Modifiers : 273
+
+
+    Method: wait
+        Exception : java.lang.InterruptedException
+        Return type : void
+        Modifiers : 17
+
+
+    Method: equals
+        Parameter : java.lang.Object
+        Return type : boolean
+        Modifiers : 1
+
+
+    Method: toString
+        Return type : java.lang.String
+        Modifiers : 1
+
+
+    Method: hashCode
+        Return type : int
+        Modifiers : 257
+
+
+    Method: getClass
+        Return type : java.lang.Class
+        Modifiers : 273
+
+
+    Method: clone
+        Exception : java.lang.CloneNotSupportedException
+        Return type : java.lang.Object
+        Modifiers : 260
+
+
+    Method: registerNatives
+        Return type : void
+        Modifiers : 266
+
+
+    Method: notify
+        Return type : void
+        Modifiers : 273
+
+
+    Method: notifyAll
+        Return type : void
+        Modifiers : 273
+
+
+    Constructor: java.lang.Object
+        Modifiers : 1
+
+        Field: val
+        Type: int
+        Modifier: 2
+        Value: 17
+
+        Field: val2
+        Type: double
+        Modifier: 2
+        Value: 0.2
+
+        Field: val3
+        Type: boolean
+        Modifier: 2
+        Value: true
+
+**** Recursion through fields
+
+******   End of super class traversal    *****
+
+null
+
+******   End of super class traversal    *****
+
+======================================================

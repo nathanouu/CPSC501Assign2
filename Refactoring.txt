@@ -1,0 +1,9 @@
+Refactoring:
+
+1. Added a lot of comments to make the code easier to follow 
+
+2. Changed method names to make it easier for audience to understand. Used full words and not just short abbreviated versions 
+
+3. Methods were pulled up to avoid clutter. 
+
+
