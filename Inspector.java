@@ -34,7 +34,8 @@ public class Inspector
         System.out.println("\n******* Methods");
         methodNames(objectClass);
 
-
+        System.out.println("\n******* Fields");
+        fieldNames(obj, objectClass, recursive);
 	}
 
     public void interfaceNames(Object obj, Class objectClass, boolean recursive)
@@ -106,23 +107,43 @@ public class Inspector
             System.out.println("		Modifiers : " + method.getModifiers() + "\n");            
             System.out.println();
         }
+    }
+    public void fieldNames(Object obj, Class objectClass, boolean recursive) 
+    {
+        Field[] declaredFields = objectClass.getDeclaredFields();
 
+        try {
+
+            for (Field field : declaredFields)
+            {
+                System.out.println("		Field: " + field.getName());
+                System.out.println("		Type: " + field.getType().getName());
+                System.out.println("		Modifier: " + field.getModifiers());
+
+                field.setAccessible(true);
+                System.out.println("		Value: " + field.get(obj) + "\n");
+            }
+
+            if (recursive) 
+            {
+                System.out.println("**** Recursion through fields ****");
+                Vector<Field> objectsToInspect = new Vector();
+
+                for (Field field : declaredFields) {
+                    if(! field.getType().isPrimitive() ) 
+		                objectsToInspect.addElement( field );
+                }
+
+                for (Field field : objectsToInspect) {
+                    inspect(field.get(obj), recursive);
+                }
+            }
+        }
+        catch (Exception e) { System.out.println(e.getMessage()); }
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
 }
-
 
 
 
